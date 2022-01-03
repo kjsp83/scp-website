@@ -7,21 +7,113 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="main.css">
     <title>SCP-6683</title>
+
+    <!--Changes dropdown buttons-->
+    <script>
+      function change() // no ';' here
+      {
+        var elem = document.getElementById("dropdownMenuButton1");
+        if (elem.value=="Show Description") {
+          elem.style.marginBottom = "660px";
+          elem.value = "Hide Description";
+        }
+        else {
+          elem.style.marginBottom = 0;
+          elem.value = "Show Description";
+        }
+      }
+
+      function change1() // no ';' here
+      {
+        var elem = document.getElementById("dropdownMenuButton2");
+        if (elem.value=="Show Description") {
+          elem.style.marginBottom = "660px";
+          elem.value = "Hide Description";
+        }
+        else {
+          elem.style.marginBottom = 0;
+          elem.value = "Show Description";
+        }
+      }
+
+      function change2() // no ';' here
+      {
+        var elem = document.getElementById("dropdownMenuButton3");
+        if (elem.value=="Show Description") {
+          elem.style.marginBottom = "660px";
+          elem.value = "Hide Description";
+        }
+        else {
+          elem.style.marginBottom = 0;
+          elem.value = "Show Description";
+        }
+      }
+
+      function change3() // no ';' here
+      {
+        var elem = document.getElementById("dropdownMenuButton4");
+        if (elem.value=="Show Description") {
+          elem.style.marginBottom = "660px";
+          elem.value = "Hide Description";
+        }
+        else {
+          elem.style.marginBottom = 0;
+          elem.value = "Show Description";
+        }
+      }
+    </script>
   </head>
   <body>
-    <h1></h1>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+
+        <!--6683-A description-->
+          <div class="dropdown">
+            <input class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" onclick="change()" value="Show Description" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+            </input>
+            <p class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
+              SCP-6683-A is a 78 year old caucasian male of Italian descent. Visually, SCP-6683-A displays no particularly noteworthy features. He possesses olive skin, greyed hair, and brown eyes. SCP-6683-A’s skin is also considerably wrinkled, though this merely reflects his stated age. 
+              <br><br>SCP-6683-A’s anomalous ability manifests upon the utterance of an idiom. Once SCP-6683-A finishes saying an idiom, an anomalous effect tangentially or directly related to the contents of said idiom will manifest and affect the nearest person within a roughly 1 kilometer radius. The effects of this ability can range from mildly beneficial to catastrophically dangerous, though they tend to only affect the individual closest to SCP-6683-A (footnote: Exceptions to this rule have been noted). Should two or more individuals stand at the same closest distance away from SCP-6683-A, they are both affected by his ability. 
+              <br><br>For unknown reasons, SCP-6683-A appears to be compelled to constantly say idioms, either to himself or others, and does not seem to be able to control himself from doing so. SCP-6683-A also does not appear to be able to perceive his own anomalous properties, claiming ignorance of the effect should he be confronted with it. Interestingly, SCP-6683-A will completely forget the existence of anyone killed by his or SCP-6683-B’s effect, despite having known some for months or even years prior to their death. SCP-6683-A’s effect also does not affect his immediate family, for reasons heretofore unknown.
+            </p>
+          </div>
+
+          <!--6683-B description-->
+          <div class="dropdown">
+            <input class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" onclick="change1()" value="Show Description" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+            </input>
+            <p class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
+              SCP-6683-A is a 78 year old caucasian male of Italian descent. Visually, SCP-6683-A displays no particularly noteworthy features. He possesses olive skin, greyed hair, and brown eyes. SCP-6683-A’s skin is also considerably wrinkled, though this merely reflects his stated age. 
+              <br><br>SCP-6683-A’s anomalous ability manifests upon the utterance of an idiom. Once SCP-6683-A finishes saying an idiom, an anomalous effect tangentially or directly related to the contents of said idiom will manifest and affect the nearest person within a roughly 1 kilometer radius. The effects of this ability can range from mildly beneficial to catastrophically dangerous, though they tend to only affect the individual closest to SCP-6683-A (footnote: Exceptions to this rule have been noted). Should two or more individuals stand at the same closest distance away from SCP-6683-A, they are both affected by his ability. 
+              <br><br>For unknown reasons, SCP-6683-A appears to be compelled to constantly say idioms, either to himself or others, and does not seem to be able to control himself from doing so. SCP-6683-A also does not appear to be able to perceive his own anomalous properties, claiming ignorance of the effect should he be confronted with it. Interestingly, SCP-6683-A will completely forget the existence of anyone killed by his or SCP-6683-B’s effect, despite having known some for months or even years prior to their death. SCP-6683-A’s effect also does not affect his immediate family, for reasons heretofore unknown.
+            </p>
+          </div>
+
+          <!--6683-C description-->
+          <div class="dropdown">
+            <input class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" onclick="change2()" value="Show Description" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+            </input>
+            <p class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
+              SCP-6683-A is a 78 year old caucasian male of Italian descent. Visually, SCP-6683-A displays no particularly noteworthy features. He possesses olive skin, greyed hair, and brown eyes. SCP-6683-A’s skin is also considerably wrinkled, though this merely reflects his stated age. 
+              <br><br>SCP-6683-A’s anomalous ability manifests upon the utterance of an idiom. Once SCP-6683-A finishes saying an idiom, an anomalous effect tangentially or directly related to the contents of said idiom will manifest and affect the nearest person within a roughly 1 kilometer radius. The effects of this ability can range from mildly beneficial to catastrophically dangerous, though they tend to only affect the individual closest to SCP-6683-A (footnote: Exceptions to this rule have been noted). Should two or more individuals stand at the same closest distance away from SCP-6683-A, they are both affected by his ability. 
+              <br><br>For unknown reasons, SCP-6683-A appears to be compelled to constantly say idioms, either to himself or others, and does not seem to be able to control himself from doing so. SCP-6683-A also does not appear to be able to perceive his own anomalous properties, claiming ignorance of the effect should he be confronted with it. Interestingly, SCP-6683-A will completely forget the existence of anyone killed by his or SCP-6683-B’s effect, despite having known some for months or even years prior to their death. SCP-6683-A’s effect also does not affect his immediate family, for reasons heretofore unknown.
+            </p>
+          </div>
+
+          <!--6683-D description-->
+          <div class="dropdown">
+            <input class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" onclick="change3()" value="Show Description" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+            </input>
+            <p class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
+              SCP-6683-A is a 78 year old caucasian male of Italian descent. Visually, SCP-6683-A displays no particularly noteworthy features. He possesses olive skin, greyed hair, and brown eyes. SCP-6683-A’s skin is also considerably wrinkled, though this merely reflects his stated age. 
+              <br><br>SCP-6683-A’s anomalous ability manifests upon the utterance of an idiom. Once SCP-6683-A finishes saying an idiom, an anomalous effect tangentially or directly related to the contents of said idiom will manifest and affect the nearest person within a roughly 1 kilometer radius. The effects of this ability can range from mildly beneficial to catastrophically dangerous, though they tend to only affect the individual closest to SCP-6683-A (footnote: Exceptions to this rule have been noted). Should two or more individuals stand at the same closest distance away from SCP-6683-A, they are both affected by his ability. 
+              <br><br>For unknown reasons, SCP-6683-A appears to be compelled to constantly say idioms, either to himself or others, and does not seem to be able to control himself from doing so. SCP-6683-A also does not appear to be able to perceive his own anomalous properties, claiming ignorance of the effect should he be confronted with it. Interestingly, SCP-6683-A will completely forget the existence of anyone killed by his or SCP-6683-B’s effect, despite having known some for months or even years prior to their death. SCP-6683-A’s effect also does not affect his immediate family, for reasons heretofore unknown.
+            </p>
+          </div>
+    </div>
   </body>
 </html>
