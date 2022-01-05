@@ -10,57 +10,53 @@
     <link rel="stylesheet" href="main.css">
     <title>SCP-6683</title>
 
-    <!--Changes dropdown buttons-->
+    <!--Button hide/show script-->
     <script>
-      function change() // no ';' here
-      {
-        var elem = document.getElementById("dropdownMenuButton1");
-        if (elem.value=="Show Description") {
-          elem.style.marginBottom = "660px";
-          elem.value = "Hide Description";
+      function change() {
+        var elem = document.getElementById("aButton");
+        if (elem.value=="hidden") {
+          elem.value = "showing";
+          elem.innerHTML = "HIDE DATA FILE";
         }
         else {
-          elem.style.marginBottom = 0;
-          elem.value = "Show Description";
+          elem.value = "hidden";
+          elem.innerHTML = "> SCP-6683-A";
         }
       }
 
-      function change1() // no ';' here
-      {
-        var elem = document.getElementById("dropdownMenuButton2");
-        if (elem.value=="Show Description") {
-          elem.style.marginBottom = "660px";
-          elem.value = "Hide Description";
+      function change1() {
+        var elem = document.getElementById("bButton");
+        if (elem.value=="hidden") {
+          elem.value = "showing";
+          elem.innerHTML = "HIDE DATA FILE";
         }
         else {
-          elem.style.marginBottom = 0;
-          elem.value = "Show Description";
+          elem.value = "hidden";
+          elem.innerHTML = "> SCP-6683-B";
         }
       }
 
-      function change2() // no ';' here
-      {
-        var elem = document.getElementById("dropdownMenuButton3");
-        if (elem.value=="Show Description") {
-          elem.style.marginBottom = "660px";
-          elem.value = "Hide Description";
+      function change2() {
+        var elem = document.getElementById("cButton");
+        if (elem.value=="hidden") {
+          elem.value = "showing";
+          elem.innerHTML = "HIDE DATA FILE";
         }
         else {
-          elem.style.marginBottom = 0;
-          elem.value = "Show Description";
+          elem.value = "hidden";
+          elem.innerHTML = "> SCP-6683-C";
         }
       }
 
-      function change3() // no ';' here
-      {
-        var elem = document.getElementById("dropdownMenuButton4");
-        if (elem.value=="Show Description") {
-          elem.style.marginBottom = "660px";
-          elem.value = "Hide Description";
+      function change3() {
+        var elem = document.getElementById("dButton");
+        if (elem.value=="hidden") {
+          elem.value = "showing";
+          elem.innerHTML = "HIDE DATA FILE";
         }
         else {
-          elem.style.marginBottom = 0;
-          elem.value = "Show Description";
+          elem.value = "hidden";
+          elem.innerHTML = "> SCP-6683-D";
         }
       }
     </script>
@@ -69,51 +65,498 @@
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div class="main-content">
 
+      <div class="warning-box">
+        <div class="warning-box-wrap">
+          <image src="assets/logo.png" alt="Foundation Logo" class="logo-image"></image>
+          <div class="text-top">BY ORDER OF THE OVERSEER COUNCIL</div>
+          <div class="text-bottom">
+            <p>The following file is Level 4/6683 Classified.</p>
+            <strong>UNAUTHORIZED ACCESS IS FORBIDDEN</strong>
+          </div>
+        </div>
+      </div>
 
-        <!--6683-A description-->
-          <div class="dropdown">
-            <input class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" onclick="change()" value="Show Description" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
-            </input>
-            <p class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
-              SCP-6683-A is a 78 year old caucasian male of Italian descent. Visually, SCP-6683-A displays no particularly noteworthy features. He possesses olive skin, greyed hair, and brown eyes. SCP-6683-A’s skin is also considerably wrinkled, though this merely reflects his stated age. 
-              <br><br>SCP-6683-A’s anomalous ability manifests upon the utterance of an idiom. Once SCP-6683-A finishes saying an idiom, an anomalous effect tangentially or directly related to the contents of said idiom will manifest and affect the nearest person within a roughly 1 kilometer radius. The effects of this ability can range from mildly beneficial to catastrophically dangerous, though they tend to only affect the individual closest to SCP-6683-A (footnote: Exceptions to this rule have been noted). Should two or more individuals stand at the same closest distance away from SCP-6683-A, they are both affected by his ability. 
-              <br><br>For unknown reasons, SCP-6683-A appears to be compelled to constantly say idioms, either to himself or others, and does not seem to be able to control himself from doing so. SCP-6683-A also does not appear to be able to perceive his own anomalous properties, claiming ignorance of the effect should he be confronted with it. Interestingly, SCP-6683-A will completely forget the existence of anyone killed by his or SCP-6683-B’s effect, despite having known some for months or even years prior to their death. SCP-6683-A’s effect also does not affect his immediate family, for reasons heretofore unknown.
-            </p>
+      <div class="divide"></div>
+      <div class="item-num">ITEM #: 6683</div>
+      <div class="obj-class">OBJECT CLASS: N/A, SEE 6683 CLASSIFICATION MEMORANDUM</div>
+      <div class="divide mt-4"></div>
+      <div class="divide mt-1 thin"></div>
+
+      <div class="memo-procedures">
+        <br>
+        <strong>6683 Designation Memorandum:</strong> Due to the familial connection between SCP-6683-A, -B, -C, and -D, the foundation has deemed it appropriate to use a single object designation for all 4. However, all 4 entities are separate anomalies, despite possessing anomalous properties that mirror or are similar to one another, and are listed below as such.
+        <br>
+        <br>
+        <strong>6683 Classification Memorandum:</strong> Due to the various unknown variables associated with determining the potential for SCP-6683-A, -B, -C, and -D to breach containment, discussion is ongoing over each anomaly's object class.
+
+        <strong>Special Containment Procedures:</strong>
+        <br>
+        <br>
+      </div>
+
+      <div>
+        <strong>Special Containment Procedures: </strong>
+        Site-93 has been constructed roughly 1.5 kilometers away from SCP-6683, and personnel are to patrol the area around SCP-6683 at all times for trespassers. Civilians attempting to gain access to SCP-6683 are to be detained and questioned, and at no time are personnel to go within 1 kilometer of SCP-6683. Researchers are not permitted to approach SCP-6683 without prior approval, and are to be transported to SCP-6683 via a specially-made bus. Researchers are to be seated at the back of the bus at all times while the bus approaches SCP-6683, and are to be seated at the front, if not driving, on the return trip. Roughly 25 D-class personnel are to be seated within the bus as well, and are to be seated at the end of the bus closest to SCP-6683 on both trips.
+        <br>
+        <br>
+      </div>
+
+      <div>
+          <strong>Description: </strong> SCP-6683 is the group designation for an Amish family of 4 located in 
+          <span class="black-text">SOMEWHERE</span> 
+          County, 
+          <span class="black-text">ASTATE</span>. 
+          Descriptions of each individual family member are listed below.
+      </div>
+
+      <div class="container button-grid">
+        <div class="row">
+          <div class="col">
+            <button class="btn btn-primary" type="button" id="aButton" onclick=change() value="hidden" data-bs-toggle="collapse" data-bs-target="#aCollapse" aria-expanded="false" aria-controls="aCollapse">
+              <span class="if-collapsed">> SCP-6683-A</span>
+              <span class="if-not-collapsed">> SCP-6683-A</span>
+            </button>
+            <div class="collapse" id="aCollapse">
+              <div class="card card-body">
+                SCP-6683-A is a 78 year old caucasian male of Italian descent. Visually, SCP-6683-A displays no particularly noteworthy features. He possesses olive skin, greyed hair, and brown eyes. SCP-6683-A's skin is also considerably wrinkled, though this merely reflects his stated age.
+                <br>
+                <br>
+                SCP-6683-A's anomalous ability manifests upon the utterance of an idiom. Once SCP-6683-A finishes saying an idiom, an anomalous effect tangentially or directly related to the contents of said idiom will manifest and affect the nearest person within a roughly 1 kilometer radius. The effects of this ability can range from mildly beneficial to catastrophically dangerous, though they tend to only affect the individual closest to SCP-6683-A. Should two or more individuals stand at the same closest distance away from SCP-6683-A, they are both affected by his ability.
+                <br>
+                <br>
+                For unknown reasons, SCP-6683-A appears to be compelled to constantly say idioms, either to himself or others, and does not seem to be able to control himself from doing so. SCP-6683-A also does not appear to be able to perceive his own anomalous properties, claiming ignorance of the effect should he be confronted with it. Interestingly, SCP-6683-A will completely forget the existence of anyone killed by his or SCP-6683-B's effect, despite having known some for months or even years prior to their death. SCP-6683-A's effect also does not affect his immediate family, for reasons heretofore unknown.
+              </div>
+            </div>
           </div>
 
-          <!--6683-B description-->
-          <div class="dropdown">
-            <input class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" onclick="change1()" value="Show Description" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
-            </input>
-            <p class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
-              SCP-6683-A is a 78 year old caucasian male of Italian descent. Visually, SCP-6683-A displays no particularly noteworthy features. He possesses olive skin, greyed hair, and brown eyes. SCP-6683-A’s skin is also considerably wrinkled, though this merely reflects his stated age. 
-              <br><br>SCP-6683-A’s anomalous ability manifests upon the utterance of an idiom. Once SCP-6683-A finishes saying an idiom, an anomalous effect tangentially or directly related to the contents of said idiom will manifest and affect the nearest person within a roughly 1 kilometer radius. The effects of this ability can range from mildly beneficial to catastrophically dangerous, though they tend to only affect the individual closest to SCP-6683-A (footnote: Exceptions to this rule have been noted). Should two or more individuals stand at the same closest distance away from SCP-6683-A, they are both affected by his ability. 
-              <br><br>For unknown reasons, SCP-6683-A appears to be compelled to constantly say idioms, either to himself or others, and does not seem to be able to control himself from doing so. SCP-6683-A also does not appear to be able to perceive his own anomalous properties, claiming ignorance of the effect should he be confronted with it. Interestingly, SCP-6683-A will completely forget the existence of anyone killed by his or SCP-6683-B’s effect, despite having known some for months or even years prior to their death. SCP-6683-A’s effect also does not affect his immediate family, for reasons heretofore unknown.
-            </p>
+          <div class="col">
+            <button class="btn btn-primary" type="button" id="bButton" onclick=change1() value="hidden" data-bs-toggle="collapse" data-bs-target="#bCollapse" aria-expanded="false" aria-controls="bCollapse">
+              <span class="if-collapsed">> SCP-6683-B</span>
+              <span class="if-not-collapsed">> SCP-6683-B</span>
+            </button>
+            <div class="collapse" id="bCollapse">
+              <div class="card card-body">
+                SCP-6683-B is a 32 year old caucasian male of Italian descent, and claims to be the son of SCP-6683-B. Just like his father, SCP-6683-B possesses no outwardly anomalous or noteworthy features, possessing olive skin, brown hair, and brown eyes. 
+                <br>
+                <br>
+                Similarly to SCP-6683-A, SCP-6683-B's anomalous properties manifest after verbal communication, but with jokes instead of idioms. What constitutes a “joke” appears to be what SCP-6683-B interprets as such, and the effect manifests regardless of whether or not it made whoever it was aimed at, if anyone at all, laugh. The effect will once again affect the person closest to SCP-6683-B within a roughly 1 kilometer radius, and just like SCP-6683-A, SCP-6683-B is unable to perceive the effect itself, as well as its victims. Effects will also be tangentially or directly related to the contents of the joke, similar to SCP-6683-A. However, unlike SCP-6683-A, SCP-6683-B's effect has been shown to be exclusively harmful and, in most cases, extremely dangerous to all people nearby, save for his immediate family. SCP-6683-B possesses the same compulsion to activate his ability, as well as ignorance to both his and his father's anomalous effects.
+              </div>
+            </div>
           </div>
+        </div>
 
-          <!--6683-C description-->
-          <div class="dropdown">
-            <input class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" onclick="change2()" value="Show Description" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
-            </input>
-            <p class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
-              SCP-6683-A is a 78 year old caucasian male of Italian descent. Visually, SCP-6683-A displays no particularly noteworthy features. He possesses olive skin, greyed hair, and brown eyes. SCP-6683-A’s skin is also considerably wrinkled, though this merely reflects his stated age. 
-              <br><br>SCP-6683-A’s anomalous ability manifests upon the utterance of an idiom. Once SCP-6683-A finishes saying an idiom, an anomalous effect tangentially or directly related to the contents of said idiom will manifest and affect the nearest person within a roughly 1 kilometer radius. The effects of this ability can range from mildly beneficial to catastrophically dangerous, though they tend to only affect the individual closest to SCP-6683-A (footnote: Exceptions to this rule have been noted). Should two or more individuals stand at the same closest distance away from SCP-6683-A, they are both affected by his ability. 
-              <br><br>For unknown reasons, SCP-6683-A appears to be compelled to constantly say idioms, either to himself or others, and does not seem to be able to control himself from doing so. SCP-6683-A also does not appear to be able to perceive his own anomalous properties, claiming ignorance of the effect should he be confronted with it. Interestingly, SCP-6683-A will completely forget the existence of anyone killed by his or SCP-6683-B’s effect, despite having known some for months or even years prior to their death. SCP-6683-A’s effect also does not affect his immediate family, for reasons heretofore unknown.
-            </p>
-          </div>
+        <div class="row">
 
-          <!--6683-D description-->
-          <div class="dropdown">
-            <input class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" onclick="change3()" value="Show Description" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
-            </input>
-            <p class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
-              SCP-6683-A is a 78 year old caucasian male of Italian descent. Visually, SCP-6683-A displays no particularly noteworthy features. He possesses olive skin, greyed hair, and brown eyes. SCP-6683-A’s skin is also considerably wrinkled, though this merely reflects his stated age. 
-              <br><br>SCP-6683-A’s anomalous ability manifests upon the utterance of an idiom. Once SCP-6683-A finishes saying an idiom, an anomalous effect tangentially or directly related to the contents of said idiom will manifest and affect the nearest person within a roughly 1 kilometer radius. The effects of this ability can range from mildly beneficial to catastrophically dangerous, though they tend to only affect the individual closest to SCP-6683-A (footnote: Exceptions to this rule have been noted). Should two or more individuals stand at the same closest distance away from SCP-6683-A, they are both affected by his ability. 
-              <br><br>For unknown reasons, SCP-6683-A appears to be compelled to constantly say idioms, either to himself or others, and does not seem to be able to control himself from doing so. SCP-6683-A also does not appear to be able to perceive his own anomalous properties, claiming ignorance of the effect should he be confronted with it. Interestingly, SCP-6683-A will completely forget the existence of anyone killed by his or SCP-6683-B’s effect, despite having known some for months or even years prior to their death. SCP-6683-A’s effect also does not affect his immediate family, for reasons heretofore unknown.
-            </p>
+          <div class="col">
+            <button class="btn btn-primary col" type="button" id="cButton" onclick=change2() value="hidden" data-bs-toggle="collapse" data-bs-target="#cCollapse" aria-expanded="false" aria-controls="cCollapse">
+              <span class="if-collapsed">> SCP-6683-C</span>
+              <span class="if-not-collapsed">> SCP-6683-C</span>
+            </button>
+            <div class="collapse" id="cCollapse">
+              <div class="card card-body">
+                SCP-6683-C is a 33 year old caucasian female of unknown descent, and has been identified as the wife of SCP-6683-B. While she arguably possesses no anomalous abilities of her own, all attempts to remove her from SCP-6683 have been unsuccessful, and she has exhibited the same inability to perceive SCP-6883-A and -B's effects. As a result, she has been classified as an SCP.</div>
+            </div>
           </div>
+          
+          <div class="col">
+            <button class="btn btn-primary col" type="button" id="dButton" onclick=change3() value="hidden" data-bs-toggle="collapse" data-bs-target="#dCollapse" aria-expanded="false" aria-controls="dCollapse">
+              <span class="if-collapsed">> SCP-6683-D</span>
+              <span class="if-not-collapsed">> SCP-6683-D</span>
+            </button>
+            <div class="collapse" id="dCollapse">
+              <div class="card card-body">
+                SCP-6683-D is the 9 month old son of SCP-6683-B and -C. Similarly to his mother, attempts to remove him from SCP-6683 have been unsuccessful, and he also appears to be unaware of SCP-6683-A and -B's effects. While the foundation theorizes that SCP-6683-D may have inherited anomalous abilities similar to his father and grandfather, this can neither be confirmed nor denied due to an inability to speak.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <div class="addendum">
+        <div>
+          <strong class="addendum-title">Addendum 6683.1:</strong> Discovery
+          <br>
+          <br>
+          Foundation agents were first alerted to the existence of SCP-6683 after repeated reports of strange phenomena occurring near 
+          <span class="white-text">SOMEWHERE</span> 
+          county, 
+          <span class="white-text">ASTATE</span>
+          . The following is a transcript of video and audio collected during the initial raid on SCP-6683.
+        </div>
+
+        <div class="addendum-content">
+            <strong>
+                Initial Raid Video Log Transcript<br>
+                Date: 
+              </strong> 
+                <span class="white-text">00</span>/4/2021<br>
+              <strong>
+                Support Team: 
+              </strong>Mobile Task Force Theta-5 "Pestering Jesters"<br>
+              <strong>
+                Subject: 
+              </strong>SCP-6683<br>
+              <strong>
+                Team Lead: 
+              </strong>1-Θ Cmdr. Patt<br>
+              <strong>
+                Team Members: 
+              </strong>1-Θ Plante / 1-Θ Argeros / 1-Θ Kleeman / 1-Θ Doetsch<br><br>
+
+              [BEGIN LOG]<br><br>
+
+              1-Θ Patt: Comms are coming online. (Pauses) Command, do you read me?<br><br>
+              Site 93 Command: We read you commander. Video is online, and we see you clearly. Can we get a signal check on everyone else?<br><br>
+              1-Θ Kleeman: Kleeman, check.<br><br>
+
+              1-Θ Argeros: Argeros, check.<br><br>
+
+              1-Θ Doherty: Doherty, checking in.<br><br>
+
+              1-Θ Plante: Ring a ding ding baby, that's a check.<br><br>
+
+              1-Θ Patt: Let's take this a bit more seriously please.<br><br>
+
+              1-Θ Plante: Fine. Plante, check.<br><br>
+
+              Site 93 Command: You all sound good. We're sure you all heard the mission briefing, but just in case we'll go through another quick rundown. We've been getting reports of suspected anomalous activity at the house located roughly 1.5 kilometers south of your current position. Investigate it for anything that may be responsible and bring it back to site 93 for examination. Is that clear?<br><br>
+
+              1-Θ Patt: Copy that, command. Let's go, lads. <br><br>
+
+              <i>Team approaches the house on foot for approximately 20 minutes. Extraneous dialogue removed.</i><br><br>
+
+              1-Θ Doherty: So whenever someone had gum or something in her class she'd bring up that story about the ants in the trombone.<br><br>
+
+              1-Θ Argeros: The ants in the wh- (<i>Pauses</i>) Wait, what is that?<br><br>
+
+              1-Θ Doherty: What's what?<br><br>
+
+              1-Θ Argeros: That lump over there. It kind of looks like a… a person.<br><br>
+
+              <i>The team approaches the body of a male human, later identified as Aaron Doetsch, collapsed onto the ground in a fetal position. The figure is observably dead, but shows no visual signs of injury. The skin is unnaturally pale and blue, although later autopsy reports indicated a time of death to be roughly 5 minutes prior to discovery.</i> <br><br>
+
+              1-Θ Plante: The hell happened to him?<br><br>
+
+              1-Θ Argeros: I don't know, but something about the guy seems off. Hold on.<br><br>
+
+              1-Θ Argeros proceeds to touch the body at various points of exposed skin.<br><br>
+
+              1-Θ Argeros: What the <span class="white-text">fuck</span>? He's hard as a rock.<br><br>
+
+              1-Θ Kleeman: Sounds like rigor mortis. <br><br>
+
+              1-Θ Argeros: I doubt that. He's still as warm as if he were alive, rigor mortis doesn't set in that fast. And look at him, he's so blue that it's like he doesn't have blood.<br><br>
+
+              1-Θ Patt: Alright. Command, do you read me?<br><br>
+
+              Site 93 Command: We copy, commander.<br><br>
+
+              1-Θ Patt: Are we authorized to investigate this further?<br><br>
+
+              Site 93 Command: Copy that, do what you have to.<br><br>
+
+              1-Θ Doherty: Copy. Performing an autopsy now.<br><br>
+
+              <i>1-Θ  Doherty proceeds to cut open a portion of the figure's arm, revealing the expected internal anatomy. However, the blood appears to have been replaced by a solid blue substance.</i><br><br>
+
+              1-Θ Argeros: Oh god, what is this stuff?<br><br>
+
+              1-Θ Doherty: I dunno, but it smells weirdly familiar. (<i>gesturing to 1-Θ Argeros</i>) Smell that. Do you recognize it?<br><br>
+
+              <i>1-Θ Plante proceeds to break off a piece of the substance with a knife and inspects it, before falling backwards in alarm.</i><br><br>
+
+              1-Θ Plante:  <span class="white-text">fuck</span>!<br><br>
+
+              1-Θ Argeros: (<i>Turning towards her</i>) What?<br><br>
+
+              1-Θ Plante: That's soap! That's <span class="white-text">fuck</span>ing soap! The same kind we have back at the site, those <span class="white-text">shitty</span> soap sticks they have us use in the bath houses!<br><br>
+
+              1-Θ Doherty: Jesus.<br><br>
+
+              1-Θ Kleeman: I mean, to be fair, given our line of work this isn't all that surprising.<br><br>
+
+              1-Θ Plante: Shut your trap, Kleeman! <br><br>
+
+              1-Θ Kleeman: Just saying.<br><br>
+
+              1-Θ Argeros: I really don't think you should be so calm here when the next person to turn into a soap bar could be your snarky-<br><br>
+
+              1-Θ Patt: Alright, break it up lovebirds. We're changing strategies. Move as fast and as quietly as possible towards the house, keep in formation until we can break inside and find whatever caused this. Command, this is Patt. Do you read me?<br><br>
+
+              Site 93 Command: We hear you Commander, go ahead. <br><br>
+
+              1-Θ Patt: Can you get me a read on how many people are in the house? Location check as well too, please.<br><br>
+
+              Site 93 Command: Copy that, one moment.<br><br>
+
+              <i>Roughly 10 seconds of silence.</i><br><br>
+
+              Site 93 Command: We're counting 4 people in the house, one of which appears to be a child. By our estimate you're also about half a kilometer away.<br><br>
+
+              1-Θ Plante: 3 adults and a kid? Not giant murder chickens or some other nightmare?<br><br>
+
+              Site 93 Command: Correct. Records indicate that they're most likely civilians as well.<br><br>
+
+              1-Θ Patt: Copy that, Command. Let's go, people.<br><br>
+
+              <i>Roughly 5 minutes of silence follow as the team approaches the house.</i> <br><br>
+
+              1-Θ Kleeman: I don't feel so hot.<br><br>
+
+              1-Θ Plante: Nobody cares if the enchilada you had for lunch was spoiled.<br><br>
+
+              1-Θ Kleeman: No, I mean I-<br><br>
+
+              <i>Several large tapeworms proceed to expel themselves out of various parts of Kleeman's body, after which he collapses onto the ground while convulsing. Later analysis showed that 53 fully grown instances of Taenia Solium manifested inside various organs, each ranging from 3 to 12 meters in length. Plante promptly screams, before being pushed aside by Patt. Patt then pulls out his firearm and shoots Kleeman twice in the head.</i><br><br>
+
+              1-Θ Plante: Jesus <span class="white-text">fuck</span>!<br><br>
+
+              1-Θ Patt: GET TO THE HOUSE! NOW!<br><br>
+
+              <i>The team proceeds to run towards the house, stopping at the doorway before Argeros breaks through it with a charge. The house is well lit, and SCP-6683-A, -B, -C, and -D are seated at a table eating dinner. 2 team members point their firearms at the family as the rest search the house.</i><br><br>
+
+              SCP-6683-B: What on earth? Who are you people?<br><br>
+
+              1-Θ Plante: Nobody move! Get down on the ground!<br><br>
+
+              SCP-6683-B: But-<br><br>
+
+              1-Θ Plante: I said on the ground, <span class="white-text">damn</span> it! Hop to!<br><br>
+
+              <i>SCP-6683-A, -B, and -C all kneel on the ground with hands behind their heads. SCP-6683-D is seated in a high chair, and begins to wail loudly.</i><br><br>
+
+              1-Θ Reed: Command, this is Patt. We've found the civilians, but nothing seems that out of the ordinary. We lost Kleeman as well.<br><br>
+
+              Site 93 Command: Copy that, Commander. Have your team escort the civilians out of there, then search the area for the anomaly.<br><br>
+
+              1-Θ Reed: Copy that. (<i>To the family</i>) Get up, you're coming with us.<br><br>
+
+              SCP-6683-B: Alright.<br><br>
+
+              <i>The team escorts the family out of the house and head to Site 00. Roughly 13 minutes pass as they reach a distance just below 1 kilometer away from the house. Extraneous dialogue removed.<br><br>
+
+              SCP-6683-B begins to chuckle, before bursting into laughter.</i><br><br>
+
+              1-Θ Plante: Uh… Are you okay?<br><br>
+
+              SCP-6683-B: (<i>still laughing</i>) What? Oh, yeah, yeah I'm fine. I have a question for you though.<br><br>
+
+              1-Θ Plante: What is it?<br><br>
+
+              SCP-6683-B: Do you want to hear a joke?<br><br>
+
+              [THE REMAINDER OF THE TRANSCRIPT'S DATA HAS BEEN CORRUPTED]
+        </div>
+      </div>
+
+      <div class="addendum">
+        <strong class="addendum-title">Addendum 6683.2:</strong> Interview 6683-A-1<br><br>
+        The following is an audio transcript of an interview conducted with SCP-6683-A.
+
+        <div class="addendum-content">
+          <strong>Interviewer:</strong> Senior Researcher Walters<br><br>
+          [BEGIN TRANSCRIPT]<br><br>
+
+          Walters: Please begin with your name.<br><br>
+
+          SCP-6683-A: Piece of cake. Name's <span class="white-text">Henry</span> <span class="white-text">Doetsch</span>. <br><br>
+
+          [A slice of cheesecake manifests in D-9855's unopened palm. He promptly yelps in alarm before being silenced by security.]<br><br>
+
+          Walters: Could you please refrain from saying any idioms while we talk?<br><br>
+
+          SCP-6683-A: Pardon me, it's just a habit I picked up from my old man. Don't pay it no mind.<br><br>
+
+          Walters: Could you tell me more about your father? <br><br>
+
+          SCP-6683-A: Not much to say, really. Pa was the quiet type, kept to himself most of the time. I member' he used to be a bit more talky when I was a kid, but he just stopped one day. Never did find out why.<br><br>
+
+          Walters: Interesting. Did you ever get tired of your father? Maybe had fights with him that made you want to leave the home?<br><br>
+
+          SCP-6683-A: Sure I did. Don't everyone? Used to have hour long arguments with im', but I didn't try n' leave. Family bonds n' all.<br><br>
+
+          Walters: I see. And what happened to your father?<br><br>
+
+          SCP-6683-A: Killed himself a few decades ago, left a note sayin' sorry to the world for some reason. I buried im' out back with the help of the missus.<br><br>
+
+          Walters: Strange. So did you grow up with any neighbors, siblings, friends, or anything like that? <br><br>
+
+          SCP-6683-A: Can't say I did. Far as I know Pa took Ma into the woods with him to start a new life, away from other people. Ma probably figured he just wanted to get something out of his system, like an outdoorsy phase. Cept that phase never ended.<br><br>
+
+          [<i>D-2158 proceeds to puke out various internal organs.</i>]<br><br>
+
+          Walters: I find that extremely difficult to believe. Our records indicate that this used to be the site of one of the largest, if not <i>the</i> largest Amish settlement in the country.<br><br>
+
+          SCP-6683-A: Strange. Nobody else's lived near here since I was born.<br><br>
+
+          Walters: Well… Could you tell me about your mother?<br><br>
+
+          SCP-6683-A: Sure. Ma was uhhh… (<i>Pauses</i>) Huh. Can't seem to remember much about her. <br><br>
+
+          [END OF TRANSCRIPT]
+        </div>
+      </div>
+
+      <div class="addendum">
+        <strong class="addendum-title">Addendum 6683.3:</strong> Interview with SCP-6683-B
+
+        The following is an audio transcript of an interview conducted with SCP-6683-A.<br><br>
+        Interviewer: Junior Researcher Spataro
+
+        <div class="addendum-content">
+
+          [BEGIN TRANSCRIPT]<br><br>
+
+          Spataro: Please start by saying your name, for the record.<br><br>
+
+          SCP-6683-B: If you say so. <span class="white-text">Joshua Doetsch</span>. (<i>SCP-6683-B suddenly starts chuckling</i>) Hey, wanna hear a joke?<br><br>
+
+          Spataro: What? Oh. No, I'm good.<br><br>
+
+          SCP-6683-B: How do you make a tissue dance?<br><br>
+
+          Spataro: Dude, I said no. <br><br>
+
+          SCP-6683-B: You put a little boogie in it! (<i>SCP-6683-B proceeds to laugh hysterically</i>)<br><br>
+
+          [<i>D-1957 collapses while convulsing before his skull begins to deform. Autopsy reports showed that his mucous membranes began producing mucus at a roughly 10000% increased rate, flooding his body before eventually rupturing his skull due to internal pressure. Junior Researcher Spataro promptly recoils in alarm.</i>]<br><br>
+
+          Spataro: Jesus, I said no! Will you cooperate with the interview or not?<br><br>
+
+          SCP-6683-B: (<i>Chuckling</i>) Sorry, when I come up with a good one I can't help but share it. Ask away.<br><br>
+
+          Spataro: Alright. Could you tell me about your childhood?<br><br>
+
+          SCP-6683-B: Not a lot to talk about. I grew up here, learned to tend to the farm from dad, and I've stayed here ever since. Nothing really happens around here so that's basically it.<br><br>
+
+          Spataro: You mentioned your dad, can you tell me anything about your mother?<br><br>
+
+          SCP-6683-B: Well I had one, but that's all I really know. She died when I was young, so I can't remember her that well.<br><br>
+
+          Spataro: Interesting. So, how did you meet-<br><br>
+
+          SCP-6683-B: (<i>Chuckling</i>) Wait, I just thought up a good one. Why did the scarecrow get an award?<br><br>
+
+          Spataro: (<i>Under her breath</i>) God, why do I always end up with the crazy ones?<br><br>
+
+          SCP-6683-B: (<i>Simultaneously</i>) Cause he was out standing in his field!<br><br>
+
+          Spataro: (<i>Simultaneously</i>) Cause he was out standing in his field, yeah I know!<br><br>
+
+          [<i>SCP-6683-B begins to laugh hysterically. Meanwhile, D-1482 begins puking straw before curling into a fetal position. When asked if he was alright, agents discovered he had transformed into a scarecrow.</i>]<br><br>
+
+          Spataro: (<i>Raising her voice</i>) Good god can you just answer the fucking questions?!?<br><br>
+
+          [<i>SCP-6683-B continues to laugh hysterically, as Junior Researcher Spataro begins to pack her things before leaving the interview room.</i>]<br><br>
+
+          SCP-6683-B: (<i>Still laughing</i>) Oh Christ! Oh Christ I can't breathe! (<i>Wheezes</i>)<br><br>
+
+          [END OF TRANSCRIPT]<br><br>
+        </div>
+
+        Junior Researcher Spataro was later reprimanded for unprofessionalism during interviews.
+
+      </div>
+      
+      <div class="addendum">
+        <strong class=”addendum-title”>Addendum 6683.4: </strong>Request from Researcher Walters<br><br>
+        The following is an excerpt from a letter written by Senior Researcher Dr. Walters to Site Director Ahlgrim regarding the files of SCP-6683.<br><br>
+        <div class="text-section">
+          <i>Requesting permission for me and my team to further investigate the nature of SCP-6683. I find it's self-containing aspect quite strange in all honesty, since none of the family even seems to be aware of that fact. The interviews further piqued my interest, especially with 6683-As family history.</i>
+        </div>
+      </div>
+
+      <div class="addendum">
+        <strong class=”addendum-title”>Addendum 6683.5: </strong>Response from Site Director Ahlgrim<br><br>
+        <div class="text-section">
+          <i>Permission granted.</i> Be sure to update me on your findings.
+        </div>
+      </div>
+
+      <div class="addendum">
+        <strong class=”addendum-title”>Addendum 6683.6: </strong>Testing Log<br><br>
+
+        The following is a log of tests conducted by Senior Researcher Walters and the SCP-6683 research team at Site 93.<br><br>
+        <i>Note from Researcher Zyung: For the record, we probably failed 20 or more attempts on all of these due to 6683-A and -B's effects. Kinda hard to conduct an experiment when every second test subject you send in gets turned into toothpaste because some amish guy said a dad joke.</i><br><br>
+        <div class="text-section">
+          <strong>Test #:</strong> 6683-A<br>
+          <strong>Date: </strong> <span class=”white-text”>25</span>/5/2021<br>
+          <strong>Subject: </strong>D-6528; 25 year old male<br>
+          <strong>Test Description: </strong> D-6528 is dressed as a home invader, and instructed to kidnap SCP-6683-D. <br>
+          <strong>Results:</strong> D-6528 successfully kidnaps SCP-6683-D without the parents knowing. However, all records of what happened during the test once the subject ran approximately 1 kilometer away from SCP-6683 have been lost. D-6528 is considered lost.<br>
+          <i>Note from Researcher Zyung: I mean, did we really expect this not to happen?</i><br><br>
+
+          <strong>Test #:</strong> 6683-B<br>
+          <strong>Date: </strong><span class=”white-text”>24</span>/5/2021<br>
+          <strong>Subject: </strong> D-5724<br>
+          <strong>Test Description: </strong> D-5724 is dressed in the same clothes as D-6528, and instructed to kidnap SCP-6683-D while SCP-6683-B is aware of him.<br>
+          <strong>Results:</strong> D-5724 approaches the house and successfully performs a break in. However, all records of the result once D-5724 grabs 6683-D in front of 6683-B have been lost. When questioned, SCP-6683-B is unable to recall the attempt. D-5724 is considered lost.<br>
+          <i>Note from Researcher Zyung: It's probably safe to assume that the same thing would happen if 6683-D got kidnapped in front of 6683-A. What would happen if we tried it with 6683-C though?</i><br><br>
+
+          <strong>Test #:</strong> 6683-C<br>
+          <strong>Date:</strong> <span class=”white-text”>2</span>/6/2021<br>
+          <strong>Subject: </strong> D-4896<br>
+          <strong>Test Description:</strong> D-4896 is dressed in the same clothes as D-6528, and instructed to kidnap SCP-6683-D while SCP-6683-C is aware of him.<br>
+          <strong>Results:</strong> D-4896 successfully kidnaps SCP-6683-D while SCP-6683-C watches. All records of the test results once the subject reaches 1 kilometer away from SCP-6683 have been lost. When questioned, SCP-6683-C was unable to recall the kidnapping. D-4896 is considered lost.<br>
+          <i>Note from Researcher Zyung: It looks like the effect is more directly tied to 6683-B and -A, while -C is more just along for the ride if that makes any sense. Maybe she really is just a normal human.</i><br><br>
+
+          <strong>Test #:</strong> 6683-D<br>
+          <strong>Date:</strong> <span class=”white-text”>2</span>/6/2021<br>
+          <strong>Subject: </strong> 20 D-class personnel<br>
+          <strong>Test Description:</strong> All personnel are given locally available firearms and instructed to surround SCP-6683 and wait outside for several hours before returning back to the site.<br>
+          <strong>Results:</strong> Test is conducted without issue, and all personnel successfully return to Site 93. SCP-6683-A, -B and -C were noticeably distressed when questioned about the test.<br>
+          <i>Note from Researcher Zyung: So we know that the effect only triggers when someone actually does something, not when they make 6683-A through C distressed or concerned. We can also rule out intent triggering the effect, since some of those D-class were talking about some nasty stuff on the ride back to the site.</i>
+        </div>
+      </div>
+
+      <div class="addendum">
+        <strong class="addendum-title">Addendum 6683.7:</strong> Letter from Junior Researcher Spataro<br><br>
+
+        The following is an excerpt from a letter written to Senior Researcher Walters from Junior Researcher Spataro regarding the research of SCP-6683.<br><br>
+      
+        <div class="addendum-content">
+          <i>
+            I have to voice my concerns regarding 6683-B. For the past few days I've been listening to the audio recordings we have because of those bugs the monitoring team placed in the house, and something's started to worry me: 6683-B is getting funnier. I'm sure you know that I know better than anyone how awful he was to interact with at first, just reading the interview transcript is enough to make you cringe. But lately, he's started making some genuinely good jokes. One or two even got a chuckle out of me. This got me curious so I did some more digging in the files. Turns out, 66883-B's effects have started to get more and more dangerous as well. And not only that, but they're affecting more people, at longer ranges. Remember the limitation his father has about only affecting the person or people closest to him? 6683-B used to have that same effect too, but if you look at the tests now, that limit's getting slacker. The last few tests have seen multiple people, all at different distances from each other, get killed in the most god awful ways. 6683-B's area of effect has gotten wider as well, we've seen a slow but steady increase of affecting people from 1 kilometer to 1.25 kilometers away over the past few months. This got me thinking: Could laughter actually help “evolve” his effect, in a way? We know that the family has been effectively isolated for the past few decades, so was 6683-B's effect being weakened by how many people he was able to interact with? It certainly seems plausible, but that's not the only thing that's worrying to me.<br><br>
+
+            The existence of 6683-B's effect, in conjunction with 6683-A's, suggests that the anomaly can be passed down to children, like a gene. On top of that, we know that this effect gets more and more violent as it's passed down. 6683-A's effect ranges from dangerous to borderline beneficial, but 6683-B's effect has almost exclusively killed anyone affected. So if 6683-B's effect is already as dangerous as it is, on top of the fact that it's getting worse...<br><br>
+
+            How bad could 6683-D be?<br><br>
+	
+            I'd like to formally request for the termination of SCP-6683 and the inhabitants therein, while we still have the time to try. Especially 6683-D. Given the trends we've seen, I'm sure it's a Keter of the worst kind possible.
+
+          </i>
+        </div>
+      </div>
+
+      <div class="addendum">
+        <strong class="addendum-title">Addendum 6683.8:</strong> Recovered Letter<br><br>
+
+        The following is a paper note discovered within the attic of the house containing SCP_6683, following a search.
+
+        <div class="addendum-content">
+          <i>
+            To all, and to my son<br><br>
+
+            If you are reading this, I am no more. I've decided that enough is enough. The ghosts of the past stay clung to my sides no matter what I do. A fitting punishment, I think, for what I've wrought upon the earth. To the world, and to my son, I'm sorry.<br><br>
+
+            But allow me to explain. Before you read this section, know that I have made it so that my son cannot read it. I believe it is a mercy on his soul, given the nature of the truth. <br>
+
+            As I write this, the world believes me dead. In all honesty, for the past few decades I have wished to be so. But after I had borne the most unholy of technologies, I believed it necessary to disappear. To leave behind the name I was born with, and all the wicked and horrific deeds it would inevitably be tied to. In that respect I succeeded, and in my anonymity I delved into the more uncanny sciences. An effort to amend my past mistakes, and give back to the world I had taken so much from. I thought that I could create a gift to humanity, provide it a way to bring society back together once my creations ravaged it to near extinction. But something went wrong. <br><br>I have my theories, but I cannot explain exactly why. Perhaps death and destruction is inherent to my nature, no matter how strongly I wish it not to be. Regardless, the gift of language I had poured so much of my time and devotion into devolved into a curse, one that rarely benefited others. Rather than just the altruistic good I had hoped it would create, there was something… more. Effects so inconceivable and oftentimes dangerous that it rendered my creation an utter failure. And just like that, I lost everything. The friends I had made, the community that had accepted me with open arms, even my wife. The only one that managed to survive my creation was my son, but even then I barely saved him from death, mere moments after his birth.<br><br> At first I had thought that at the very least, I was the only one to bear it, that at least one curse I had wrought upon the world would die along with it's wretched creator. But once again fate showed it's cruel hand, and when Henry reached the age of one I learned that that curse had become hereditary, even in spite of his conception far before the birth of my creation. In fact, it got even worse. The roughly 50-50 odds I had originally gotten, for either a beneficial or harmful effect respectively, had somehow twisted into a 25-75 chance, and the benefits had been diluted significantly, while the detriments increased in severity. By now, I grew weary of my efforts, and I decided that enough was enough. I would raise my son as best as I could, give the world at least one happy soul before removing the worst of them all. In pursuit of this, I believed it necessary to modify my creation one final time. The effects of the curse would be rendered imperceptible to those that received it, and they would remain unaffected as well. In addition, the curse would at the very least attempt to benefit it's bearer, prevent harm directed at them from others. However, I would confine them to my home for as long as my abilities would allow. Prevent my son from realizing his own terrible abilities while ensuring that he would not unknowingly wreak havoc across the states.<br><br> Following this, I resigned myself to the role of a simple father, raising my son as best as I could while I prepared for my own death. In time, he grew into a fine young man, and I lost my abilities with age. But as I lay bedridden, I learned of an anomaly. People immune to the curse outside of my family, able to interact with us as if we were normal humans. Of course, I speak of my daughter in law. It was here I realized my own foolishness: rather than try and fix my mistake a second time, I gave up on the prospect entirely. And only when I was made unable to try did cruel god see fit to show me that hope was present.<br><br> 
+            
+            I tire of his games, and I will not waste away in my bed as he mocks me with my daughter in law. And so I ask of you, or of anyone else that can:<br><br>
+            
+            <div class="mid">
+              <strong>Please, fix my mistake.</strong><br><br> With every passing year my descendants will be able to move further and further away from the home, and I know that one day, when my efforts fail me for the final time, they will escape from the farmstead and rain death upon the world, death even greater than what Hitler could have ever wrought. The curse will evolve and gain traits I cannot even predict, by the time you read this it may not even sound like the same thing. But it is possible to overcome it, perhaps even cure it, though I know not how. I wish I could do this of my own volition, but the uncaring march of time has rendered me useless. I cannot right my wrongs, and I can never know whether you decide to take action or not, if you even read this in time.
+            
+              <br><br>I can only hope that you do.<br><br>
+            </div>
+            - J. Robert Oppenheimer
+          </i>
+        </div>
+      </div>
     </div>
   </body>
 </html>
